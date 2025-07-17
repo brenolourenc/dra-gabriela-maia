@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Gabriela Maia | Clínica Geral, Estética e Prótese</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .global{
+            font-family: 'Cormorant', serif;
+        }
+        body {
+            font-family: 'Cormorant', serif;
+            color: #5a4a42;
+            background-color: #f9f7f3;
+            font-size: 20px;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .italic-accent {
+            font-family: 'Cormorant', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+        .gold-gradient {
+            background: linear-gradient(90deg, #e8d8b0 0%, #d4b97a 100%);
+        }
+        .gold-text {
+            color: #b89f5b;
+        }
+        .beige-bg {
+            background-color: #f9f7f3;
+        }
+        .light-beige-bg {
+            background-color: #fffcf8;
+        }
+        .border-gold {
+            border-color: #d4b97a;
+            border-radius: 10px;
+        }
+        .paragraph_sizer {
+            font-size: 12px;
+        }
+        
+    </style>
+</head>
+<body class="antialiased font-semibold">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-2 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img class="w-64 h-148" src="../dra-gabriela-maia/src/logo_symbol.png" alt="logo">
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none" id="menu-toggle">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 font-semibold hover:text-amber-800 transition">Início</a>
+                    <a href="#sobre" class="text-gray-700 font-semibold hover:text-amber-800 transition">Sobre</a>
+                    <a href="#servicos" class="text-gray-700 font-semibold hover:text-amber-800 transition">Serviços</a>
+                    <a href="#avaliacoes" class="text-gray-700 font-semibold hover:text-amber-800 transition">Avaliações</a>
+                    <a href="#contato" class="text-gray-700 font-semibold hover:text-amber-800 transition">Contato</a>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="hidden md:hidden bg-white w-full py-4 px-6 border-t" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="#inicio" class="text-gray-700 font-semibold hover:text-amber-800 transition">Início</a>
+                <a href="#sobre" class="text-gray-700 font-semibold hover:text-amber-800 transition">Sobre</a>
+                <a href="#servicos" class="text-gray-700 font-semibold hover:text-amber-800 transition">Serviços</a>
+                <a href="#avaliacoes" class="text-gray-700 font-semibold hover:text-amber-800 transition">Avaliações</a>
+                <a href="#contato" class="text-gray-700 font-semibold hover:text-amber-800 transition">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 px-12 bg-amber-50">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Hero Text -->
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <div class="mb-6">
+                        <h2 class="text-4xl md:text-5xl font-bold mt-2 mb-6 leading-tight">
+                            Transformando vidas <br>
+                            <span class="italic-accent gold-text">Te ajudo a cuidar do seu sorriso com leveza!</span>
+                        </h2>
+                        <p class="text-xl mb-8">
+                            Cuidados odontológicos personalizados com foco em estética e conforto. 
+                            Seu sorriso merece o melhor tratamento.
+                        </p>
+                    </div>
+                    
+                    <!-- Schedule -->
+                    <div class="mb-8 p-6 bg-white rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex items-center mb-2">
+                            <i class="far fa-clock gold-text mr-3 text-xl"></i>
+                            <h4 class="font-bold">Horário de Atendimento</h4>
+                        </div>
+                        <p class="text-gray-700 font-normal">Segunda à Sexta — <span class="font-medium">8h às 21h</span></p>
+                        <p class="text-gray-700 font-normal">Sábado — <span class="font-medium">8h às 12h</span></p>
+                    </div>
+                    
+                    <!-- Buttons -->
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="https://api.whatsapp.com/send?phone=5585997050628&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta.%20" class="gold-gradient text-white px-8 py-3 rounded-full font-medium text-center shadow-sm hover:shadow-md transition">
+                            <i class="fab fa-whatsapp mr-2"></i> Agendar pelo WhatsApp
+                        </a>
+                        <a href="#servicos" class="border border-gold text-amber-800 px-8 py-3 rounded-full font-medium text-center hover:bg-amber-50 transition">
+                            Nossos Serviços
+                        </a>
+                    </div>
+                    
+                    <!-- Reviews -->
+                    <div class="mt-8 flex items-center">
+                        <div class="flex mr-2">
+                            <i class="fas fa-star gold-text"></i>
+                            <i class="fas fa-star gold-text"></i>
+                            <i class="fas fa-star gold-text"></i>
+                            <i class="fas fa-star gold-text"></i>
+                            <i class="fas fa-star gold-text"></i>
+                        </div>
+                        <span class="text-gray-600">5.0 (160 avaliações)</span>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNcej_-Ij4uo9xQ4ez4hk2pjZUkcZBzOmTWbwZ0=s680-w680-h510-rw" 
+                             alt="Dra. Gabriela Maia" 
+                             class="rounded-lg shadow-xl w-full max-w-md">
+                        <!--https://lh3.googleusercontent.com/p/AF1QipNcej_-Ij4uo9xQ4ez4hk2pjZUkcZBzOmTWbwZ0=s680-w680-h510-rw-->
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-md">
+                            <h4 class="font-bold">Dra. Gabriela Maia</h4>
+                            <p class="text-sm font-bold text-gray-600">CRO-CE 10.451</p>
+                            <p class="text-sm font-bold gold-text">Clínica Geral, Estética e Prótese</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 px-12 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <span class="italic-accent gold-text text-xl font-bold">Conheça a profissional</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">Sobre a Dra. Gabriela</h2>
+            </div>
+            <p class="text-xl mb-6 font-bold">
+                     Formada pelo centro universitário Christus (Unichristus), 
+                     A Dra. Gabriela Maia dedica sua carreira a proporcionar sorrisos saudáveis e harmoniosos através de técnicas modernas e atendimento personalizado.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="md:w-3/3 ">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="p-6 bg-amber-50 rounded-lg">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full gold-gradient flex items-center justify-center mr-3">
+                                    <i class="fas fa-graduation-cap text-white"></i>
+                                </div>
+                                <h4 class="font-bold">Formação</h4>
+                            </div>
+                            <ul class="list-disc pl-5 text-gray-700 min-w-200px">
+                                <li>Aperfeiçoamento em Cirurgia Bucodentária - ABO/CE</li>
+                                <li>Aperfeiçoamento em Dentística - SLMANDIC</li>
+                                <li>Especialização em Prótese Dentária - NEXO</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-amber-50 rounded-lg">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full gold-gradient flex items-center justify-center mr-3">
+                                    <i class="fa-solid fa-book-open text-white"></i>
+                                </div>
+                                <h4 class="font-bold">Especialidades</h4>
+                            </div>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>Primeira consulta Odontológica</li>
+                                <li>Orientação profissional</li>
+                                <li>Retorno de consultas Odontologia</li>
+                                <li>Implantes dentários</li>                    
+                                <li>Restauração dental</li>                   
+                                <li>Raspagem periodontal</li>                     
+                                <li>Prótese sobre implantes</li>                        
+                                <li>Protese de Porcelana</li>                     
+                                <li>Profilaxia dental (optionmpeza)</li>                                
+                                <li>Placa miorrelaxante</li>                    
+                                <li>Placa de mordida para bruxismo</li>                               
+                                <li>Lente de contato dental</li>                        
+                                <li>Gengivoplastia</li>               
+                                <li>Facetas em cerâmica</li>                    
+                                <li>Facetas de porcelana</li>                     
+                                <li>Extração do siso</li>                 
+                                <li>Coroas provisórias</li>                   
+                                <li>Coroas em cerâmica</li>                   
+                                <li>Consulta Dentista</li>                  
+                                <li>Clareamento dental</li>                   
+                                <li>Tratamento de canal</li>                
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-amber-50 rounded-lg">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full gold-gradient flex items-center justify-center mr-3">
+                                    <i class="fas fa-award text-white"></i>
+                                </div>
+                                <h4 class="font-bold">Experiência</h4>
+                            </div>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>6 anos de experiência clínica</li>
+                                <li>Cirurgiã-Dentista da Estratégia de Saúde da Família em Fortaleza-CE (2019 - 2021)</li>
+                                <li>Prótese dentária</li>
+                                <li>Disfunção temporomandibular e dor orofacial</li>
+                                <li>Odontologia estética</li>
+                                <li>Urgencias odontologicas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 px-12 bg-amber-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <span class="italic-accent gold-text text-xl font-bold">Nossos Tratamentos</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">Serviços Odontológicos</h2>
+                <p class="max-w-2xl mx-auto mt-4">
+                    Oferecemos uma gama completa de tratamentos odontológicos com tecnologia de ponta e alta qualidade de materiais.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-stethoscope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Avaliação e Acompanhamento</h3>
+                    <p class="text-gray-600 mb-4 font-bold">
+                        Análise, diagnóstico e planejamento inicial do tratamento. Envolve a primeira visita do paciente, retornos para controle e orientação sobre saúde bucal.
+                    </p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tooth text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Estética Dental</h3>
+                    <p class="text-gray-600 mb-4 font-bold">
+                        Melhoria da aparência dos dentes e sorriso, esses procedimentos envolvem clareamento dental, correções estéticas(aplicações de facetas ou lentes de contato dental) remodelagem gengival(gengivoplastia), e outras substituições visiveis.
+                    </p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-teeth-open text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Reabilitação Oral</h3>
+                    <p class="text-gray-600 mb-4 font-bold">
+                        Procedimentos que visam restaurar função mastigatória e estética, por meio de implantes, próteses, coroas e restaurações.
+                    </p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-teeth text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tratamentos Funcionais / Preventivos</h3>
+                    <p class="text-gray-600 mb-4 font-bold">
+                        Tratamentos com foco em prevenção de problemas bucais e distúrbios funcionais, como o bruxismo, além de cuidados periódicos como a limpeza.
+
+
+                    </p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-procedures mr-3 text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tratamentos Clínicos e Cirúrgicos</h3>
+                    <p class="text-gray-600 mb-4 font-bold">
+                        Procedimentos clínicos e cirúrgicos para tratar doenças bucais mais complexas, como periodontite, infecções, dor de dente, e dentes inclusos (como o siso).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="avaliacoes" class="py-20 px-12 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <span class="italic-accent gold-text text-xl font-bold">O que nossos pacientes dizem</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">Avaliações</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="p-8 bg-amber-50 rounded-lg">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star gold-text"></i>
+                        <i class="fas fa-star gold-text"></i>
+                        <i class="fas fa-star gold-text"></i>
+                        <i class="fas fa-star gold-text"></i>
+                        <i class="fas fa-star gold-text"></i>
+                    </div>
+                    <p class="italic-accent text-lg mb-6 font-bold">
+                        "Adorei o tratamento da dr, minha retirada de cisos ficou muito perfeita, ja tinha tirado outro com outra pessoa, mas definitivamente o melhor tratamento foi com a Gabriela"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mr-4">
+                            <i class="text-white text-2xl font-bold">L</i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Leonardo Barros</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="p-8 bg-amber-50 rounded-lg">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star gold-text"></i>
+                        <i class="fas fa-star gold-text"></i>
+                        <i class="fas fa-star gold-text"></i>
+                        <i class="fas fa-star gold-text"></i>
+                        <i class="fas fa-star gold-text"></i>
+                    </div>
+                    <p class="italic-accent text-lg mb-6 font-bold">
+                        "Atendimento excelente, profissional competente e de conduta muito humana, explicando tudo que o paciente precisa saber de maneira muito didática. Nota 10!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mr-4">
+                            <i class="text-white text-2xl font-bold">C</i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Caio Melo</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="p-8 bg-amber-50 rounded-lg">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star gold-text"></i>
+                        <i class="fas fa-star gold-text"></i>
+                        <i class="fas fa-star gold-text"></i>
+                        <i class="fas fa-star gold-text"></i>
+                        <i class="fas fa-star gold-text"></i>
+                    </div>
+                    <p class="italic-accent text-lg mb-6 font-bold">
+                        "Dra Gabriela é super atenciosa e explica tudo de forma clara! Além disso, o consultório dela é muito confortável, com direito a televisão e música durante o tratamento. Com certeza voltarei para procedimentos futuros."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mr-4">
+                            <i class="text-white text-2xl font-bold">C</i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Carolina Bruno</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 px-12 bg-amber-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <span class="italic-accent gold-text text-xl font-bold">Entre em contato</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">Agende sua consulta</h2>
+                <p class="max-w-4xl mx-auto mt-4">
+                    Estamos prontos para cuidar do seu sorriso. Entre em contato para marcar uma avaliação 
+                    ou tirar suas dúvidas.
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <!-- Contact Info -->
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <div class="bg-white p-8 rounded-lg shadow-sm h-full">
+                        <h3 class="text-xl font-bold mb-6">Informações de Contato</h3>
+                        
+                        <div class="mb-6">
+                            <div class="flex items-start mb-4">
+                                <i class="fas fa-map-marker-alt gold-text mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold mb-1">Endereço</h4>
+                                    <p class="text-gray-600 font-bold">
+                                        R. Monsenhor Bruno, 1153 - Sala 127<br>
+                                        Aldeota, Fortaleza - CE
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start mb-4">
+                                <i class="fas fa-phone-alt gold-text mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold mb-1">Telefone</h4>
+                                    <p class="text-gray-600 font-bold">(85) 99705-0628</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-clock gold-text mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold mb-1">Horário de Atendimento</h4>
+                                    <p class="text-gray-600 font-bold">
+                                        Segunda à Sexta: 08h às 21h<br>
+                                        Sábado: 08h às 12h
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Redes Sociais</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.instagram.com/dra.gabrielamaia/" class="w-10 h-10 rounded-full border border-gold flex items-center justify-center gold-text hover:bg-amber-50 transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=5585997050628&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta.%20" class="w-10 h-10 rounded-full border border-gold flex items-center justify-center gold-text hover:bg-amber-50 transition">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-6">
+                                <a href="https://api.whatsapp.com/send?phone=5585997050628&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta.%20" class="gold-gradient text-white px-8 py-3 rounded-full font-medium text-center shadow-sm hover:shadow-md transition">
+                                    <i class="fab fa-whatsapp mr-2"></i> Agendar pelo WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                 <div class="elegant-card rounded-3xl p-8 h-full w-full">
+                    <h3 class="text-3xl font-semibold mb-8 text-gray-600">Nossa Localização</h3>
+                    <div class="h-96 overflow-hidden shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3520833581283!2d-38.5094206!3d-3.7332159000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c749e2aa6510d9%3A0xcb6e12a80864cf10!2sDra.%20Gabriela%20Maia!5e0!3m2!1spt-BR!2sbr!4v1752711541472!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-2xl">
+                        </iframe>
+                    </div>
+                    <div class="mt-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            <i class="fas fa-info-circle gold-text mr-2"></i>
+                            Localizado no Scopa Platinum Corporation, um prédio comercial localizado que oferece salas e andares corporativos, também conta com segurança eletrônica, elevadores, estacionamento e está situado em uma região estratégica para fins comerciais. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gold-gradient py-12 px-12 border-t border-gray-100 text-gray-700">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- Logo and Info -->
+                <div class="mb-8 md:mb-0 font-bold">
+                    <div class="flex items-center mb-4">
+                        <img class="w-64 h-150 border-gold" src="../dra-gabriela-maia/logo_symbol.png" alt="logo">
+                    </div>
+                    <p class=" max-w-xs font-bold text-gray-700">
+                        Te ajudo a cuidar do seu sorriso com leveza!
+                    </p>
+                </div>
+                
+                <!-- Contato e horários -->
+                <div class="mb-8 md:mb-0">
+                    <h4 class="font-bold mb-4">Contato e horários</h4>
+                    <p class="flex items-center"><i class="fas fa-phone mr-3"></i>(85) 98755-0023</p>
+                    <p class="flex items-center"><i class="fas fa-map-marker-alt mr-3"></i>R. Monsenhor Bruno, 1153 - Sala 127, Aldeota, Fortaleza - CE</p>
+                    <p class="flex items-center"><i class="fas fa-clock mr-3"></i>Segunda à Sexta 8h às 21h, Sabado 8h às 12h</p>
+                </div>
+            </div>
+        <!-- Copyright -->
+        <div class="border-t border-gray-100 mt-12 pt-8 text-center">
+            <p class="font-bold">
+                &copy; 2025 Dra. Gabriela Maia - Clínica Geral, Estética e Prótese. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://api.whatsapp.com/send?phone=5585997050628&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta.%20" class="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center text-white text-2xl shadow-lg hover:shadow-xl transition">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</html>
